@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      Sara Qi
+    </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keywords" content="Sara Qi, resume, software, student">
+    <meta name="description" content="">
+    <meta name="author" content="Sara Qi">
+
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sara Qi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><span>Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#development-title"><span>Development</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- test -->
+
+    <!-- banner -->
+    <div id="jumbotron" class="jumbotron d-flex justify-content-center text-align-center align-items-center">
+      <div class="container" style="position: relative">
+        <div class="jumbotron-title">
+          <h1 >Hi, I'm Sara</h1>
+          <p style="margin-bottom: 0px;">I have a passion for developing pragmatic code.</p>
+          <p class="computer-only">I also enjoy bringing ideas to life through robotics.</p>
+        </div>
+      </div>
+    </div>
+    <canvas id="background-canvas">
+    </canvas>
+    <!-- projects -->
+    <div id="overlap">
+      <div id="projects" style="height: 550px;">
+        <div class="container">
+          <div style="d-flex justify-content-center text-align-center align-items-center">
+            <p>
+              <div id="test" class="d-flex justify-content-center text-align-center align-items-center">
+                <a href="#projects">
+                  <div id="circle" >
+                    <span id="arrow"></span>
+                  </div>
+                </a>
+              </div>
+            </p>
+          </div>
+          <div class="row" style="width:inherit; margin: 0px;">
+            <div class="projects-title">
+              <h2>My Work</h2>
+            </div>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+          <div id="rightArrow"><span>&#8594;</span></div>
+          <div id="leftArrow"><span>&#8592;</span></div>
+          <div id="viewContainer">
+            <div id="tslshow">
+              <div class="slider-item item-one" style="">
+                <div class="card invisible" style=""></div>
+              </div>
+              <div class="slider-item">
+                <div class="card">
+                  <img class="card-img-top" src="assets/ruby3.svg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Selenium + HTML Parser</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">ruby</h6>
+                    <p class="card-text">A ruby script that compares two websites.</p>
+                    <button type="button" class="btn btn-info btn-md btn-grow" data-toggle="modal" data-target="#RubyModal">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card" id="first-card">
+                  <img class="card-img-top" src="assets/poutine_quest_icon.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Poutine Quest</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">android studio</h6>
+                    <p class="card-text">A short adventure game centered around three challenges.</p>
+                    <button type="button" class="btn btn-info btn-md btn-grow" data-toggle="modal" data-target="#PoutineQuestModal">View</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card">
+                  <img class="card-img-top" src="assets/game_screenshot.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="letter-spacing: -0.5px;">Retro Snowboard Game</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">javascript</h6>
+                    <p class="card-text">A javascript game created using html canvas and pixel art.</p>
+                    <button type="button" class="btn btn-info btn-md btn-grow" data-toggle="modal" data-target="#SnowboardModal">Play</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card" >
+                  <img class="card-img-top" src="assets/ping_pong_machine.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Table Tennis Machine</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">LegoNXT</h6>
+                    <p class="card-text">A robot made from Lego/3D printing, programmed with RobotC.</p>
+                    <button type="button" class="btn btn-info btn-md btn-grow" data-toggle="modal" data-target="#TableTennisModal">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card">
+                  <img class="card-img-top" src="assets/keyboardimage.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Mini Keyboard</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">arduino</h6>
+                    <p class="card-text">A prototype demonstrating circuit and microprocessor interactions.</p>
+                    <button type="button" class="btn btn-info btn-md btn-grow" data-toggle="modal" data-target="#KeyboardModal">Video</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <!-- modals -->
+        <div id="SnowboardModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retro Snowboard Game</h4>
+              </div>
+              <div class="modal-body d-flex align-items justify-content-center">
+                <div id="game-container" class="" style="touch-action: none;" tabindex="1">
+                  <canvas id="myCanvas" width="250px" height="300px">
+                  </canvas>
+                  <div class="arrow-container">
+                    <div class="up-arrow-container" onmousedown="mouseUp()" onmouseup="stopMove()" ontouchstart="mouseUp()" ontouchend="stopMove()">
+                      <div class="up-arrow">
+                      </div>
+                    </div>
+                    <div class="left-arrow-container" onmousedown="mouseLeft()" onmouseup="stopMove()" ontouchstart="mouseLeft()" ontouchend="stopMove()">
+                      <div class="left-arrow">
+                      </div>
+                    </div>
+                    <div class="right-arrow-container" onmousedown="mouseRight()" onmouseup="stopMove()" ontouchstart="mouseRight()" ontouchend="stopMove()">
+                      <div class="right-arrow">
+                      </div>
+                    </div>
+                    <div class="down-arrow-container" onmousedown="mouseDown()" onmouseup="stopMove()" ontouchstart="mouseDown()" ontouchend="stopMove()">
+                      <div class="down-arrow">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="PoutineQuestModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Poutine Quest</h4>
+              </div>
+              <div class="modal-body">
+                <h5>Purpose</h5>
+                <p>A personal project used to explore interest in mobile development using Android Studio.</p>
+                <h5>Overview &emsp;<a style="font-size: 16px" href="https://play.google.com/store/apps/details?id=ca.saraqi.adventure&hl=en" target="_blank" class="text-muted">download on Google Play</a></h5>
+                <p>Poutine Quest is a story based game in which one plays as the protagonist who must overcome three challenges to complete his quest.
+                   The three challenges are minigames which the user must complete in order to progress. The app is available on Google Play.</p>
+                <h5>Minigame 1</h5>
+                <img src="assets/poutinequest/instructionsone.png" style="width: 49%; height: 49%;">
+                <img src="assets/poutinequest/gameone.png" style="width: 49%; height: 49%;">
+                <img src="assets/poutinequest/gameonehint.png" style="width: 49%; height: 49%;">
+                <p>The place at which the different fries appear is randomly generated. If the player picks the wrong one, the "wrong" screen will flash. If the player fails three times, the "gameover" activity will start. The player can ask for a hint by clicking the lightbulb in the top-right corner.</p>
+                <h5>Minigame 2</h5>
+                <img src="assets/poutinequest/instructionstwo.png" style="width: 49%; height: 49%;">
+                <img src="assets/poutinequest/gametwo.png" style="width: 49%; height: 49%;">
+                <p>If the player picks the wrong combination of equipment, the player will be defeated by the monster and the "gameover" activity will start.</p>
+                <h5>Minigame 3</h5>
+                <img src="assets/poutinequest/instructionsthree.png" style="width: 49%; height: 49%;">
+                <img src="assets/poutinequest/gamethree.png" style="width: 49%; height: 49%;">
+                <img src="assets/poutinequest/gamethreehint.png" style="width: 49%; height: 49%;">
+                <p>If the player cannot solve the riddle, the player can choose to either receive a hint or the answer in the top right corner. If the player submits the wrong answer, "wrong answer" will flash above the input field.</p>
+                <h5>Gameover Activity</h5>
+                <img src="assets/poutinequest/gameover.png" style="width: 49%; height: 49%;">
+                <p>If at any time the player fails a challenge, they will be brought to the gameover activity. If the player clicks "retry" they will be allowed another attempt at the challenge that they failed. If the player clicks "quit", they will be brought to the "start" screen.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="KeyboardModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Arduino Keyboard</h4>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-center">
+                  <video width="" height="" controls>
+                    <source src="assets/croppedkeyboardvideo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p></p>
+                <p>The keyboard is composed of 5 buttons with frequencies from the C major scale.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="TableTennisModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Table Tennis Machine</h4>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-center">
+                  <video width="360px" height="640px" controls>
+                    <source src="assets/tabletennisvideo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p></p>
+                <p>The machine fires ping-ping balls at varying angles.</p>
+                <p>More info coming soon</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="RubyModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Ruby QA Script</h4>
+              </div>
+              <div class="modal-body">
+                <h5>Purpose</h5>
+                <p>To augment workplace efficiency and productivity by automating website comparisons through source code analysis.
+                  Ruby was used to check that the websites contained the same content after migrating to the new cms.</p>
+                <h5>HTML Verifier &emsp;<a style="font-size: 16px" href="code/qa_html.rb" class="text-muted">view code</a></h5>
+                <p>The HTML Verifier takes in a domain and uses two different versions of it to access both the old site and new site. All HTML parsing was done using Nokogiri.
+                  First, it accessed the sitemap and obtained the relative links of all the pages. Then, by attaching the relative links to the new domain and old domain, it checks that all pages are present.
+                  Next, it checks that all &lt;img&gt; on the new site have alt text. Then it compares the class attribute of &lt;img&gt; to the old site and the href attribute of the &lt;a&gt;.
+                  Any errors that it detects are outputted to a .txt file. There are also more functionalities such as checking blog posts.</p>
+                <h5>CSS Comparer (Selenium) &emsp;<a style="font-size: 16px" href="code/qa_selenium_css.rb" class="text-muted">view code</a></h5>
+                <p>The CSS Comparer takes in a domain and uses Selenium to open two windows to access both the old and new site. It uses the sitemap, just like the HTML verifier to traverse the sites.
+                   If the sites need a login to view the site, Selenium will send keys to login. Then, it goes page by page to compare CSS values. For example, to compare font styles, it uses a loop to traverse an array containing tags such as &lt;h1&gt;.
+                   Then, within that loop, it traverses another array containing attributes such as font-family and compares them to that of the old site. Any inconsistencies will be outputted to a .txt file.</p>
+                <h5>Final Interface &emsp;<a style="font-size: 16px" href="code/QA-Interface-exe.zip" class="text-muted">download interface</a></h5>
+                <p>The above Ruby scripts were then combined with existing Python code which checked other aspects of the sites. Tkinter was used as a graphical interface for greater usability.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- development -->
+
+      <div id="development">
+        <div class="container" id="development-title">
+          <h2>I write</h2>
+        </div>
+        <div class="container" id="language-container">
+          <div class="row language-container">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <h3>C++</h3>
+                </div>
+                <div class="back">
+                  <p>Used in school to demonstrate AVL trees, stacks/queues, and linked lists.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <h3>Java</h3>
+                </div>
+                <div class="back">
+                  <p>Used for Android development with Android Studio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <h3>Ruby</h3>
+                </div>
+                <div class="back">
+                  <p>Used Selenium and Nokogiri to test sites.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <h3>C</h3>
+                </div>
+                <div class="back">
+                  <p>Used to with Arduino to create various small mechatronics systems. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+
+      <div id="contact">
+        <div class="container">
+          <h2>Let's Talk</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <p>I'm currently at the University of Waterloo studying Mechatronics Engineering. Besides drowning myself in coffee, I also enjoy snowboarding and dancing. Feel free to contact me!</p>
+            </div>
+            <div class="col-lg-8">
+              <form class="form-horizontal" action="https://script.google.com/macros/s/AKfycbwB-S6sb-QHQRaLN4q-lLpav39T6DcwQ-RGANd2OJJjAMvIuafK/exec" method="POST">
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-2 col-sm-3 col-form-label"  >Name</label>
+                  <div class="col-md-4 col-sm-9">
+                    <input class="form-control" name="name" type="text" value="" placeholder="Required" id="name-input" required="true">
+                  </div>
+                  <label for="company-input" class="col-md-2 col-sm-3 col-form-label">Company</label>
+                  <div class="col-md-4 col-sm-9">
+                    <input class="form-control" name="company" type="text" value="" id="company-input">
+                  </div>
+                  <label for="email-input" class="col-md-2 col-sm-3 col-form-label" >Email</label>
+                  <div class="col-md-4 col-sm-9">
+                    <input class="form-control" name="email" type="email" placeholder="Required" required="true" value="" id="email-input">
+                  </div>
+                  <label for="tel-input" class="col-md-2 col-sm-3 col-form-label" >Phone</label>
+                  <div class="col-md-4 col-sm-9">
+                    <input class="form-control" name="phone" type="tel" value="" id="tel-input">
+                  </div>
+                  <label for="message-input" class="col-md-2 col-sm-3 col-form-label" >Message</label>
+                  <div class="col-md-10 col-sm-9">
+                    <textarea class="form-control" style="height:100px" name="message" placeholder="Required" type="text" value="" id="message-input" required="true"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <button type="submit" value="go" class="btn btn-default btn-submit"><span>Send </span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="d-flex justify-content-center align-items-center">
+        <small class="">Copyright © 2017 Sara Qi </small>
+      </footer>
+    </div>
+    <!-- test -->
+
+
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+    <script src="backgroundCanvas.js"></script>
+    <script src="JS/jquery.hotkeys.js"></script>
+    <script src="JS/key_status.js"></script>
+    <script src="JS/sprite.js"></script>
+    <script src="game.js"></script>
+
+  </body>
+</html>
