@@ -398,10 +398,11 @@ right:95px;
 right:30px;
 }
 
-#rightArrow span, #leftArrow span {
-  position: relative;
+#rightArrow span i , #leftArrow span i {
   font-size: 30px;
-  left: 11px;
+  position: relative;
+  left: 9px;
+  top: 8px;
 }
 
 #leftArrow:hover, #rightArrow:hover {
@@ -811,6 +812,11 @@ div[class$="-arrow"]:active::before {
 
 #contact p {
   color: #AFAFAF;
+}
+
+#contact p i {
+  position: relative;
+  top: 7px;
 }
 
 form input {

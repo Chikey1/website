@@ -27,8 +27,8 @@ $(document).ready(function(){
 // slider
 var view = $("#tslshow");
 var move = "350px";
-var sliderLimit = -1700 + screen.width;
-var endLeft = -2050 + screen.width;
+var sliderLimit = -2050 + screen.width;
+var endLeft = -2400 + screen.width;
 endLeft = endLeft.toString();
 endLeft = endLeft.concat("px");
 
