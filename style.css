@@ -819,6 +819,15 @@ div[class$="-arrow"]:active::before {
   top: 7px;
 }
 
+#contact p a {
+  color: #AFAFAF;
+
+}
+
+#contact p a:hover {
+  color: #AFAFAF;
+}
+
 form input {
   margin-bottom: 10px;
 }
